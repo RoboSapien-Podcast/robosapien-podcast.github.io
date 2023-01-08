@@ -1,0 +1,18 @@
+<p>home works!</p>
+<div class="home-wrapper">
+    <div class="landing">
+        <div class="logo">{{appTitle}}</div>
+        <div class="info">
+            <div>
+                <div class="title"></div>
+                <div class="summary"></div>
+            </div>
+            <div class="social-links" *ngFor="let link of links">
+                <div class="social">
+                    <!-- <img [src]="link.logo" [alt]="link.logo"> -->
+                    <a [href]="link.url">{{link.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
